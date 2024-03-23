@@ -11,6 +11,11 @@
 		3A7C6B592BAEF1FA00B9A528 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C6B582BAEF1FA00B9A528 /* DIContainer.swift */; };
 		3A7C6B5C2BAEF21900B9A528 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C6B5B2BAEF21900B9A528 /* Service.swift */; };
 		3A7C6B632BAEF2E100B9A528 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C6B622BAEF2E100B9A528 /* AuthenticationViewModel.swift */; };
+		3A7C6B672BAF04C900B9A528 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3A7C6B662BAF04C900B9A528 /* Supabase */; };
+		3A7C6B6A2BAF04E100B9A528 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C6B692BAF04E100B9A528 /* Supabase.swift */; };
+		3A7C6B6C2BAF061000B9A528 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C6B6B2BAF061000B9A528 /* AuthView.swift */; };
+		3A7C6B6E2BAF09D100B9A528 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C6B6D2BAF09D100B9A528 /* ProfileView.swift */; };
+		3A7C6B702BAF0CA500B9A528 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C6B6F2BAF0CA500B9A528 /* Profile.swift */; };
 		723ABD872AFFF1B800C260F1 /* LMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723ABD862AFFF1B800C260F1 /* LMessengerApp.swift */; };
 		723ABD892AFFF1B800C260F1 /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723ABD882AFFF1B800C260F1 /* AuthenticatedView.swift */; };
 		723ABD8B2AFFF1B900C260F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723ABD8A2AFFF1B900C260F1 /* Assets.xcassets */; };
@@ -45,6 +50,10 @@
 		3A7C6B582BAEF1FA00B9A528 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		3A7C6B5B2BAEF21900B9A528 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3A7C6B622BAEF2E100B9A528 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		3A7C6B692BAF04E100B9A528 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		3A7C6B6B2BAF061000B9A528 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		3A7C6B6D2BAF09D100B9A528 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3A7C6B6F2BAF0CA500B9A528 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		723ABD832AFFF1B800C260F1 /* LMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		723ABD862AFFF1B800C260F1 /* LMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMessengerApp.swift; sourceTree = "<group>"; };
 		723ABD882AFFF1B800C260F1 /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
@@ -64,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7C6B672BAF04C900B9A528 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +115,7 @@
 		3A7C6B5D2BAEF27A00B9A528 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3A7C6B682BAF04D800B9A528 /* Supabase */,
 				3A7C6B5A2BAEF21000B9A528 /* Service */,
 				72E4BEFA2B00B871007A1060 /* Extension */,
 			);
@@ -114,6 +125,7 @@
 		3A7C6B5E2BAEF28A00B9A528 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3A7C6B6F2BAF0CA500B9A528 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +135,8 @@
 			children = (
 				723ABD882AFFF1B800C260F1 /* AuthenticatedView.swift */,
 				3A7C6B612BAEF2BB00B9A528 /* Authentication */,
+				3A7C6B6B2BAF061000B9A528 /* AuthView.swift */,
+				3A7C6B6D2BAF09D100B9A528 /* ProfileView.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -142,6 +156,21 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		3A7C6B652BAF04C900B9A528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A7C6B682BAF04D800B9A528 /* Supabase */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C6B692BAF04E100B9A528 /* Supabase.swift */,
+			);
+			path = Supabase;
+			sourceTree = "<group>";
+		};
 		723ABD7A2AFFF1B800C260F1 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +178,7 @@
 				723ABD962AFFF1B900C260F1 /* LMessengerTests */,
 				723ABDA02AFFF1B900C260F1 /* LMessengerUITests */,
 				723ABD842AFFF1B800C260F1 /* Products */,
+				3A7C6B652BAF04C900B9A528 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +265,9 @@
 			dependencies = (
 			);
 			name = LMessenger;
+			packageProductDependencies = (
+				3A7C6B662BAF04C900B9A528 /* Supabase */,
+			);
 			productName = LMessenger;
 			productReference = 723ABD832AFFF1B800C260F1 /* LMessenger.app */;
 			productType = "com.apple.product-type.application";
@@ -354,11 +387,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7C6B6A2BAF04E100B9A528 /* Supabase.swift in Sources */,
+				3A7C6B702BAF0CA500B9A528 /* Profile.swift in Sources */,
+				3A7C6B6E2BAF09D100B9A528 /* ProfileView.swift in Sources */,
 				3A7C6B632BAEF2E100B9A528 /* AuthenticationViewModel.swift in Sources */,
 				3A7C6B592BAEF1FA00B9A528 /* DIContainer.swift in Sources */,
 				723ABD892AFFF1B800C260F1 /* AuthenticatedView.swift in Sources */,
 				3A7C6B5C2BAEF21900B9A528 /* Service.swift in Sources */,
 				72E4BEFC2B00B871007A1060 /* Color+Extension.swift in Sources */,
+				3A7C6B6C2BAF061000B9A528 /* AuthView.swift in Sources */,
 				723ABD872AFFF1B800C260F1 /* LMessengerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,6 +744,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A7C6B662BAF04C900B9A528 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A7C6B642BAEFF6000B9A528 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 723ABD7B2AFFF1B800C260F1 /* Project object */;
 }

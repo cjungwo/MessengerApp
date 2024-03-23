@@ -4,19 +4,28 @@
 //
 //
 
+import Foundation
 import SwiftUI
 
 struct AuthenticatedView: View {
   @StateObject var authViewModel: AuthenticationViewModel
+  @State var isAuthenticated = false
   
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+      Group {
+        if isAuthenticated {
+          ProfileView()
+        } else {
+          AuthView()
         }
-        .padding()
+      }
+      .task {
+        for await state in await auth.authStateChanges {
+          if [.initialSession, .signedIn, .signedOut].contains(state.event) {
+            isAuthenticated = state.session != nil
+          }
+        }
+      }
     }
 }
 
